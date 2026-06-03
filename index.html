@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#2a0d3a" />
+    <title>26弘毅之夜邀请函</title>
+    <link rel="preload" href="assets/front.png" as="image" />
+    <link rel="preload" href="assets/back.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="scene" aria-label="26弘毅之夜邀请函动画">
+      <div class="orientation-lock" role="status" aria-live="polite">
+        <p>请横屏观看</p>
+      </div>
+
+      <section class="stage" data-state="sealed">
+        <button class="card" type="button" aria-label="点击翻页" disabled>
+          <span class="card-inner">
+            <img class="card-face card-front" src="assets/front.png" alt="邀请函正面" />
+            <img class="card-face card-back" src="assets/back.png" alt="邀请函背面" />
+          </span>
+        </button>
+
+        <button class="envelope" type="button" aria-label="点击信封">
+          <span class="envelope-shadow"></span>
+          <span class="envelope-back"></span>
+          <span class="envelope-letter-edge"></span>
+          <span class="envelope-pocket"></span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-seal"></span>
+        </button>
+
+        <p class="hint" aria-live="polite">点击信封</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
